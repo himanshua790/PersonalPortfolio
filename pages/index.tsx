@@ -1,7 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
+import { Montserrat } from "@next/font/google";
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import { SocialHandles } from "../src/components";
+import Navigation from "../src/components/Navigation";
+import { LandingPage } from "../src/pages";
+const montserrat = Montserrat();
 
 export default function Home() {
   return (
@@ -15,13 +17,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <SocialHandles />
-      <main className={styles.main}>
-        <h1>
-          Hi, I'm <span className={styles.mainText}>Himanshu.</span>
-          <br />
-          I'm a full stack developer.
-        </h1>
+      <Navigation />
+      <main className={montserrat.className}>
+        <LandingPage />
       </main>
     </>
   );
