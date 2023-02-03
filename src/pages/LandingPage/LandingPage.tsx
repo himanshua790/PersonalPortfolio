@@ -1,16 +1,25 @@
 import useStyles from "./LandingPage.styles";
 const LandingPage = () => {
-  const styles = useStyles();
+  const classes = useStyles();
   return (
-    <div className={styles.container}>
-      <div className={styles.headingSection}>
-        <h1>
-          Hi, I&apos;m <span className={styles.highlight}>Himanshu.</span>
+    <header>
+      <div className={classes.headerHero}>
+        <div className={classes.heading}>
+          <span>turning ideas into </span> <br />
+          <span>real life </span>
+          <span className={classes.headingGradient}>products </span>
           <br />
-          I&apos;m a full stack developer.
-        </h1>
+          <span>is my calling.</span>
+        </div>
+        <a
+          data-scroll-to="true"
+          className={classes.heroCTA}
+          href="#sectionProjects"
+        >
+          VIEW PROJECTS
+        </a>
       </div>
-    </div>
+    </header>
   );
 };
 

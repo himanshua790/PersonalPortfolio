@@ -1,11 +1,56 @@
 import { makeStyles } from "@mui/styles";
 
 export default makeStyles({
-  container: {
+  main: {
+    position: "fixed",
+    top: "3rem",
+    right: "0",
+    left: "0",
+    padding: "1rem 2rem",
     display: "flex",
-    justifyContent: "flex-end",
-    flexDirection: "row",
-    alignContent: "center",
-    alignItems: "stretch",
+    justifyContent: "space-between",
+    alignItems: "center",
+    width: "50%",
+    marginLeft: "auto",
+    marginRight: "auto",
+    background: "rgba(42,43,56,.5)",
+    border: ".2rem solid #2a2b37",
+    WebkitBackdropFilter: "blur(104px)",
+    backdropFilter: "blur(104px)",
+    borderRadius: "1.5rem",
+  },
+  brandLogo: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+  branchLogoWrapper: {
+    overflow: "hidden",
+    marginLeft: "1rem",
+  },
+  brandLogoText: {
+    WebkitAnimation: "logoLeftAnim 15s cubic-bezier(1,0,0,1) infinite",
+    animation: "logoLeftAnim 15s cubic-bezier(1,0,0,1) infinite",
+    animationDuration: "15s",
+    animationTimingFunction: "cubic-bezier(1, 0, 0, 1)",
+    animationDelay: "0s",
+    animationIterationCount: "infinite",
+    animationDirection: "normal",
+    animationFillMode: "none",
+    animationPlayState: "running",
+    animationName: "logoLeftAnim",
+  },
+  toggleButtonWrapper: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    color: "var(--color-gray)",
+    fontFamily: "Sofia Sans Extra Condensed, sans-serif",
+  },
+  toggleButton: {
+    backgroundColor: "transparent",
+    outline: "none",
+    border: "none",
+    cursor: "pointer",
   },
 });
