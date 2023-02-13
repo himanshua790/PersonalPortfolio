@@ -1,25 +1,22 @@
-import useStyles from "./LandingPage.styles";
+import styles from "./LandingPage.module.scss";
 const LandingPage = () => {
-  const classes = useStyles();
   return (
-    <header>
-      <div className={classes.headerHero}>
-        <div className={classes.heading}>
-          <span>turning ideas into </span> <br />
-          <span>real life </span>
-          <span className={classes.headingGradient}>products </span>
-          <br />
-          <span>is my calling.</span>
-        </div>
-        <a
-          data-scroll-to="true"
-          className={classes.heroCTA}
-          href="#sectionProjects"
-        >
-          VIEW PROJECTS
-        </a>
+    <div className={styles.headerHero}>
+      <div className={styles.heading}>
+        <span>turning ideas into </span> <br />
+        <span>real life </span>
+        <span className={styles.headingGradient}>products </span>
+        <br />
+        <span>is my calling.</span>
       </div>
-    </header>
+      <a
+        data-scroll-to="true"
+        className={styles.heroCTA}
+        href="#sectionProjects"
+      >
+        VIEW PROJECTS
+      </a>
+    </div>
   );
 };
 

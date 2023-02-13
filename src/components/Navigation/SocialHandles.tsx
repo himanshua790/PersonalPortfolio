@@ -3,9 +3,8 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import SaveAltIcon from "@mui/icons-material/SaveAlt";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import { ButtonGroup, IconButton } from "@mui/material";
-import useStyles from "./SocialHandles.styles";
+import styles from "./Navigation.module.scss";
 function ResponsiveAppBar() {
-  const classes = useStyles();
   const buttons = [
     <IconButton
       key="linkedIn"
@@ -42,7 +41,7 @@ function ResponsiveAppBar() {
     </IconButton>,
   ];
   return (
-    <div className={classes.container}>
+    <div className={styles.container}>
       <ButtonGroup size="large" aria-label="large button group">
         {buttons}
       </ButtonGroup>

@@ -1,8 +1,5 @@
-/* eslint-disable react/no-unescaped-entities */
-import { Montserrat } from "@next/font/google";
 import Head from "next/head";
-import App from "../src/App";
-const montserrat = Montserrat();
+import Main from "../src/Main";
 
 export default function Home() {
   return (
@@ -51,7 +48,7 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
       </Head>
-      <App />
+      <Main />
     </>
   );
 }
