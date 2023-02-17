@@ -1,6 +1,7 @@
 .main {
   display: grid;
   grid-template-columns: 1fr repeat(12, minmax("min-content", 10rem)) 1fr;
+  position: relative;
   // row-gap: 11rem;
   // padding: 0 20%;
   &::before {
@@ -17,11 +18,27 @@
   }
 }
 .header {
-  // grid-column: 2/14;
+  grid-column: 2/14;
+  margin-top: 25rem;
+  padding: 0 6rem;
+}
+.navigationWrapperOld {
+  display: flex;
+  justify-content: center;
+  // position: sticky;
+  left: 0;
+  right: 0;
+  // margin-left: auto;
+  // margin-right: auto;
+  width: 100%;
+  position: sticky;
+  top: 2rem;
 }
 .navigationWrapper {
-  grid-column: 5/14;
+  position: relative;
+  z-index: 9999;
 }
 .headerWrapper {
   grid-column: 5/14;
+  margin-top: 8rem;
 }

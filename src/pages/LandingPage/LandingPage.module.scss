@@ -1,9 +1,9 @@
 .headerHero {
-  margin-top: 5rem;
+  // margin-top: 5rem;
 }
-.heading {
+.headerHeroHeading {
   font-family: Mark Pro, sans-serif;
-  font-size: 5rem;
+  font-size: 9rem;
   line-height: 100%;
   letter-spacing: -0.03em;
   color: var(--color-white);
@@ -11,6 +11,13 @@
   font-weight: 600;
 }
 .headingGradient {
+  background: -webkit-linear-gradient(
+    135deg,
+    var(--color-light-blue),
+    var(--color-light-purple),
+    var(--color-light-blue),
+    var(--color-light-purple)
+  );
   background: linear-gradient(
     -45deg,
     var(--color-light-blue),
@@ -18,23 +25,25 @@
     var(--color-light-blue),
     var(--color-light-purple)
   );
+  // TODO: use mixin for animation
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 400% 400%;
-  -webkit-animation: gradient 1s ease infinite;
-  animation: gradient 1s ease infinite;
+  -webkit-animation: gradient 3s ease infinite;
+  animation: gradient 3s ease infinite;
 }
 .heroCTA {
   margin-top: 5rem;
   display: inline-block;
   font-family: Sofia Sans Extra Condensed, sans-serif;
-  font-size: 1.2rem;
+  font-size: 2rem;
   line-height: 92.4%;
   letter-spacing: 0.19em;
   color: var(--color-gray);
   text-decoration: none;
   position: relative;
+  // TODO: use mixin for animation
 
   &:after {
     display: block;

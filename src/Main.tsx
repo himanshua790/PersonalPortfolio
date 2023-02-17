@@ -5,16 +5,18 @@ type Props = {};
 
 function App({}: Props) {
   return (
-    <div className={styles.main}>
+    <>
       <div className={styles.navigationWrapper}>
         <Navigation />
       </div>
-      <div className={styles.headerWrapper}>
-        <header className={styles.header}>
-          <LandingPage />
-        </header>
+      <div className={styles.main}>
+        <div className={styles.headerWrapper}>
+          <header className={styles.header}>
+            <LandingPage />
+          </header>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
