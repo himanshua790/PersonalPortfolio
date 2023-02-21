@@ -1,0 +1,26 @@
+.main {
+  grid-column: 1/15;
+  padding: 0 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 16rem;
+  margin-bottom: 14rem;
+  color: var(--color-gray);
+}
+.headerRight {
+  width: 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    color: var(--color-gray);
+    text-decoration: none;
+    font-family: Sofia Sans Extra Condensed, sans-serif;
+    line-height: 92.4%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+}

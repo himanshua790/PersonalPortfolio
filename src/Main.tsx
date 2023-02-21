@@ -1,6 +1,8 @@
 import styles from "./Main.module.scss";
+import Container from "./components/Container/Container";
+import LandingFooter from "./components/LandingFooter";
+import LandingPage from "./components/LandingPage";
 import Navigation from "./components/Navigation";
-import LandingPage from "./pages/LandingPage/LandingPage";
 type Props = {};
 
 function App({}: Props) {
@@ -14,8 +16,10 @@ function App({}: Props) {
           <header className={styles.header}>
             <LandingPage />
           </header>
+          <LandingFooter />
         </div>
       </div>
+      <Container />
     </>
   );
 }
