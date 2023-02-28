@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styles from "./Main.module.scss";
 import Container from "./components/Container/Container";
+import Footer from "./components/Footer/Footer";
 import LandingFooter from "./components/LandingFooter";
 import LandingPage from "./components/LandingPage";
 import Layout from "./components/Layout/Layout";
@@ -30,6 +31,7 @@ function App({}: Props) {
         </div>
       </div>
       <Container />
+      <Footer />
     </Layout>
   );
 }

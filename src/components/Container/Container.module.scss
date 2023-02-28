@@ -105,7 +105,7 @@
     -webkit-writing-mode: tb-rl;
     -ms-writing-mode: tb-rl;
     writing-mode: tb-rl;
-    font-family: D-DIN Condensed, sans-serif;
+    font-family: Sofia Sans Extra Condensed, sans-serif;
     font-size: 1.3rem;
     line-height: 92.4%;
     letter-spacing: 0.19em;
@@ -114,7 +114,7 @@
   }
 }
 .projectCardMiddle {
-  width: 35rem;
+  width: 70rem;
   height: 45rem;
   background-size: cover;
   position: relative;
@@ -201,4 +201,60 @@
   align-items: center;
   justify-content: space-between;
   width: 5rem;
+}
+.contactSection {
+  grid-column: 2/14;
+  padding: 0 6rem;
+  margin-top: 12rem;
+
+  h2 {
+    font-size: 4.5rem;
+    line-height: 130.4%;
+    letter-spacing: -0.06em;
+    color: var(--color-gray);
+    font-weight: 100;
+    margin-top: 4rem;
+  }
+  a {
+    color: var(--color-white);
+    font-weight: 700;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+}
+.socialSection {
+  grid-column: 2/14;
+  padding: 0 6rem;
+  margin-top: 12rem;
+  p {
+    margin-top: 2rem;
+  }
+}
+.paragraph {
+  font-size: 1.7rem;
+  line-height: 130.4%;
+  color: var(--color-gray);
+}
+.socialSectionLinks {
+  margin-top: 4rem;
+  grid-gap: 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 40rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    color: var(--color-gray);
+    text-decoration: none;
+    font-family: Sofia Sans Extra Condensed, sans-serif;
+    line-height: 92.4%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 100;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
 }
