@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { FiX } from "react-icons/fi";
+import ComingSoon from "../ComingSoon";
 import styles from "./SideMenu.module.scss";
 
 interface SidebarProps {
@@ -30,12 +31,7 @@ const SideMenu: React.FC<SidebarProps> = ({ isOpen, toggle }) => {
       <div className={styles.sidebarHeader}>
         <FiX className={styles.closeIcon} onClick={toggle} />
       </div>
-      <ul className={styles.sidebarMenu}>
-        <li className={styles.sidebarMenuItem}>Home</li>
-        <li className={styles.sidebarMenuItem}>About</li>
-        <li className={styles.sidebarMenuItem}>Services</li>
-        <li className={styles.sidebarMenuItem}>Contact</li>
-      </ul>
+      <ComingSoon />
     </motion.div>
   );
 };
