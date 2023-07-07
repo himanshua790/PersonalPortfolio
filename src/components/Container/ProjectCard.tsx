@@ -14,6 +14,7 @@ const ProjectCard = <
     title: string;
     subTitle?: string;
     href: string;
+    type: string;
   }
 >(
   props: TProjectCard
@@ -21,7 +22,7 @@ const ProjectCard = <
   return (
     <div className={styles.projectCard}>
       <div className={styles.projectCardleft}>
-        <h4 className={styles.heading4}>{props.heading}</h4>
+        <h4>{props.heading}</h4>
       </div>
 
       <div className={styles.projectCardMiddle}>
@@ -47,19 +48,20 @@ const ProjectCard = <
       <div className={styles.projectCardright}>
         <h2 className={`${styles.tenXTechAnim} ${styles.heading2}`}>
           {props.title}
-          <br />
-          {props.subTitle}
         </h2>
+        <h3 className={`${styles.tenXTechAnim} ${styles.subHeading}`}>
+          {props.subTitle}
+        </h3>
         <a
           rel="noreferrer"
           target="_blank"
           href={props.href}
           className={styles.projectCardlink}
         >
-          VIEW SOURCE CODE
+          {props?.type === "CODE" ? "VIEW SOURCE CODE" : "LINK"}
         </a>
         <div className={styles.projectCardSocials}>
-          <a rel="noreferrer" target="_blank" href="">
+          {/* <a rel="noreferrer" target="_blank" href="">
             <Image
               src="svg/dribble.svg"
               height={20}
@@ -67,15 +69,17 @@ const ProjectCard = <
               alt="dribble icon"
               color=""
             />
-          </a>
-          <a rel="noreferrer" target="_blank" href="">
-            <Image
-              src="svg/github.svg"
-              height={20}
-              width={20}
-              alt="github icon"
-            />
-          </a>
+          </a> */}
+          {props?.type === "CODE" && (
+            <a rel="noreferrer" target="_blank" href={props?.href}>
+              <Image
+                src="svg/github.svg"
+                height={20}
+                width={20}
+                alt="github icon"
+              />
+            </a>
+          )}
         </div>
       </div>
     </div>

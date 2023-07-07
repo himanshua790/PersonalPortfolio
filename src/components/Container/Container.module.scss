@@ -106,7 +106,7 @@
     -ms-writing-mode: tb-rl;
     writing-mode: tb-rl;
     font-family: Sofia Sans Extra Condensed, sans-serif;
-    font-size: 1.3rem;
+    font-size: 2rem;
     line-height: 92.4%;
     letter-spacing: 0.19em;
     color: #8b8b8b;
@@ -144,6 +144,13 @@
 }
 .heading2 {
   font-size: 4.2rem;
+  line-height: 105%;
+  letter-spacing: -0.03em;
+  color: var(--color-white);
+  font-family: Mark Pro, sans-serif;
+}
+.subHeading {
+  font-size: 3rem;
   line-height: 105%;
   letter-spacing: -0.03em;
   color: var(--color-white);

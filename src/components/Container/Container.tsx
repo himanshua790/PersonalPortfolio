@@ -15,6 +15,7 @@ const Container = () => {
       title: "PostedPod Auto Post",
       // subTitle: "Full-Stack Developer",
       href: "https://apps.shopify.com/posted-pod",
+      type: "PRODUCT",
     },
     {
       heading: "NX, TYPESCRIPT, EXPRESS.JS, HTML, CSS, JAVASCRIPT, MATERIAL UI",
@@ -27,8 +28,24 @@ const Container = () => {
         alt: "himanshu 2 model",
       },
       title: "10xTechLabs",
-      // subTitle: "Full-Stack Developer",
+      subTitle: "Freelance",
       href: "https://www.10xtechlabs.com/",
+      type: "PRODUCT",
+    },
+    {
+      heading: "Shopify, Facebook, Google Analytics",
+      img1: {
+        src: "/fg_logo.jpeg",
+        alt: "FuelGrowth",
+      },
+      img2: {
+        src: "/project1.webp",
+        alt: "himanshu 2 model",
+      },
+      title: "FuelGrowth",
+      subTitle: "Data source integration",
+      href: "https://www.fuelgrowth.ai/",
+      type: "PRODUCT",
     },
   ];
   return (
