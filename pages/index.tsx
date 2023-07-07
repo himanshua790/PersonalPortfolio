@@ -20,7 +20,7 @@ export default function Home() {
         <title>Himanshu Soni 🚀 — Full Stack Devloper</title>
         <meta
           name="description"
-          content="I'm a self-taught Front End Developer and turning ideas into real life products is my calling."
+          content="I'm a self-taught Fullstack Developer and turning ideas into real life products is my calling."
         />
         <meta property="og:type" content="website" />
         <meta
@@ -31,7 +31,7 @@ export default function Home() {
         <meta property="og:image" content="webp/preview-image.png" />
         <meta
           property="og:description"
-          content="I'm a self-taught Front End Developer and turning ideas into real life products is my calling."
+          content="I'm a self-taught Fullstack Developer and turning ideas into real life products is my calling."
         />
         <meta
           name="twitter:title"
@@ -39,7 +39,7 @@ export default function Home() {
         />
         <meta
           name="twitter:description"
-          content="I'm a self-taught Front End Developer and turning ideas into real life products is my calling."
+          content="I'm a self-taught Fullstack Developer and turning ideas into real life products is my calling."
         />
         <meta name="twitter:image" content="webp/preview-image.png" />
         <meta name="twitter:card" content="summary_large_image" />
