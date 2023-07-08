@@ -23,7 +23,7 @@ const LandingPage = () => {
             target="_blank"
             data-scroll-to="true"
             className={styles.heroCTA}
-            href="/resume"
+            href="https://drive.google.com/file/d/1Y5WqxXFWn0HcE1dHJghsFIUue2CI9Qu6/view?usp=sharing"
             rel="noopener noreferrer"
           >
             RESUME

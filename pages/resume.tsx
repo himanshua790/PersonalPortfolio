@@ -1,3 +1,7 @@
+// TODO: need to add PDF view
+
+// @deprecate
+
 type Props = {};
 
 const Resume = (props: Props) => {
