@@ -23,7 +23,7 @@ const Navigation: React.FC<SidebarProps> = ({ isOpen, toggle }) => {
       <Link className={styles.brandLogo} href="/">
         <Image
           className="brand-logo__icon"
-          src="/LogoOne-removebg-preview.png"
+          src="/LogoOne.png"
           width={40}
           height={30}
           alt="himanshu logo icon"
