@@ -3,6 +3,21 @@ import ProjectCard from "./ProjectCard";
 const Container = () => {
   const data = [
     {
+      heading: "REACT.JS, NEXT.JS, EXPRESS.JS, LANGCHAIN, AWS, TYPESCRIPT",
+      img1: {
+        src: "/swami-vivekananda.webp",
+        alt: "vivekananda.ai",
+      },
+      img2: {
+        src: "/swami-vivekananda.webp",
+        alt: "vivekananda.ai",
+      },
+      title: "vivekananda.ai",
+      subTitle: "Full-Stack Developer",
+      href: "https://vivekananda.ai/",
+      type: "PROJECT",
+    },
+    {
       heading: "SHOPIFY,REDIS, NEXT.JS, REACT.JS",
       img1: {
         src: "/PostedBanner.webp",

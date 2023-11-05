@@ -30,14 +30,18 @@ const ProjectCard = <
           // src=
           src={props.img1.src}
           alt={props.img1.alt}
-          height={500}
-          width={500}
+          // height={500}
+          // width={500}
+          fill
+          style={{ objectFit: "contain" }}
         />
         <Image
           src={props.img2.src}
           alt={props.img2.alt}
-          height={100}
-          width={100}
+          // height={100}
+          // width={100}
+          fill
+          style={{ objectFit: "contain" }}
         />
         <canvas
           width={642}

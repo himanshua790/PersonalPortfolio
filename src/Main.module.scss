@@ -2,8 +2,6 @@
   display: grid;
   grid-template-columns: 1fr repeat(12, minmax("min-content", 10rem)) 1fr;
   position: relative;
-  // row-gap: 11rem;
-  // padding: 0 20%;
 }
 .header {
   grid-column: 2/14;
