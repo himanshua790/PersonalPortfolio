@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./LandingPage.module.scss";
 const LandingPage = () => {
   return (
@@ -19,15 +20,14 @@ const LandingPage = () => {
             VIEW PROJECTS
           </a>
 
-          <a
+          <Link
             target="_blank"
-            data-scroll-to="true"
             className={styles.heroCTA}
-            href="https://drive.google.com/file/d/1jKBPRCkrcvMNKH1kNaptYw42ps8UaWwa/view?usp=sharing"
             rel="noopener noreferrer"
+            href={"/resume"}
           >
             RESUME
-          </a>
+          </Link>
         </div>
       </div>
     </>

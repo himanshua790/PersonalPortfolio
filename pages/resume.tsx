@@ -13,7 +13,7 @@ const Resume = (props: Props) => {
           height: "100%",
         }}
         type="application/pdf"
-        src={"/resume.pdf"}
+        src={"/Himanshu_Soni_Fullstack_v1.2.pdf"}
         about="Himanshu's Fullstack Resume"
         title="Himanshu's Fullstack Resume"
       />
